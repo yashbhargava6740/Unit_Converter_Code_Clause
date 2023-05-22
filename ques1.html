@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h2><i>Unit Converter</i> </h2>
+        <label>Value:</label>
+        <input type="text" id="inputValue">
+        <label>Conversion Type:</label>
+        <select id="conversionTypeSelect">
+            <option value="length">Length</option>
+            <option value="area">Area</option>
+            <option value="temperature">Temperature</option>
+        </select>
+        <label>From:</label>
+        <select id="fromUnitSelect"></select>
+        <label>To:</label>
+        <select id="toUnitSelect"></select>
+        <button onclick="convert()">Convert</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
